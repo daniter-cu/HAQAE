@@ -101,7 +101,7 @@ class ExtendableField(ttdata.Field):
     def build_vocab(self):
         raise NotImplementedError
 
-    def numericalize(self, arr, device=None, train=True):
+'''    def numericalize(self, arr, device=None, train=True):
         """Turn a batch of examples that use this field into a Variable.
 
         If the field has include_lengths=True, a tensor of lengths will be
@@ -166,7 +166,7 @@ class ExtendableField(ttdata.Field):
         if self.include_lengths:
             return arr, lengths
         return arr
-
+'''
 
 
 class SentenceDataset(ttdata.Dataset):
